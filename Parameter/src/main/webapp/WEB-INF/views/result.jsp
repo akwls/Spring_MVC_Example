@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>test1</title>
+<title>result</title>
 </head>
 <body>
-<h1>test1.jsp 파일입니다.</h1>
+<h1>Success~~!!</h1>
 </body>
 </html>
