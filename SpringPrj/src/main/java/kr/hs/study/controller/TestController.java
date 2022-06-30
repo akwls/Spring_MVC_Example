@@ -26,10 +26,12 @@ public class TestController {
 	}
 	
 	@GetMapping("/multi")
-	public String multi(@RequestParam int number) {
+	public String multi(@RequestParam int number, Model model) {
+		String result = "";
 		for(int i=1; i<=9; i++) {
-			System.out.println(i + " * " + number + " = " + (i*number));
+			result += number + " * " + i + " = " + (i*number) + "<br>";
 		}
+		model.addAttribute("result", result);
 		return "result";
 	}
 }
